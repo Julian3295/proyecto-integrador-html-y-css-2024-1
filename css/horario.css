@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.menu.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu-icono {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar > .menu-list > li > a:hover {
+    color: #F7DC6F;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list li {
+    margin: 0 2px;
+}
+
+@media (min-width: 768px) {
+    .menu-list li {
+        margin: 0 10px;
+    }
+}
+
+.menu-list a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+tbody td {
+    background-color: #333;
+    color: #fff;
+}
+
+tbody tr:last-child td {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .menu.container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-list li {
+        margin: 5px 0;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+
+    table {
+        margin-bottom: 20px;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 5px 0;
+    }
+
+    .menu.container {
+        padding: 0 10px;
+    }
+
+    .menu-list a {
+        font-size: 14px;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+    }
+
+    th, td {
+        font-size: 12px;
+    }
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .footer-content {
+    text-align: center;
+}
+
+.footer .footer-content h3 {
+    margin-bottom: 10px;
+}
+
+.footer .footer-content p {
+    margin: 5px 0;
+}
+
+.footer .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Ajusta el espacio entre los iconos */
+}
+
+.footer .socials a img {
+    width: 30px; /* Ajusta el tamaño de los iconos si es necesario */
+    height: 30px; /* Ajusta el tamaño de los iconos si es necesario */
+}
