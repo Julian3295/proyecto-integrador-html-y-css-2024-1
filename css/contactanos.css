@@ -17,8 +17,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #201414;
+    color: #201414;
     padding: 10px 0;
     margin: 0;
 }
@@ -88,6 +88,7 @@ img{
     grid-gap: 50px;
     margin-top: 15px;
 }
+
 
 @media (max-width: 768px) {
     .container-form {
@@ -236,7 +237,7 @@ img{
 }
 
 .footer {
-    background-color: #333;
+    background-color: #201414;
     color: #fff;
     padding: 20px 0;
     text-align: center;
